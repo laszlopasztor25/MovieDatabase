@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="checked">#4CBA6A</color>
+    <color name="claret">#540303</color>
+    <color name="secondary_text">#CD853F</color>
+    <color name="divider">#54524F</color>
+    <color name="yellow">#F2D116</color>
+</resources>

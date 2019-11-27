@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <VideoView
+            android:id="@+id/myVideo"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/claret">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                style="@style/CustomStyle"
+                android:text="Large Text"
+                android:id="@+id/textMovieTitle"
+                android:gravity="center_vertical"
+                android:textColor="#FFFFFF"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/image_add"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_check"
+                android:background="@drawable/border"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desc"
+            android:id="@+id/textMovieDesc"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image_movie"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/hunger_games"
+                    android:layout_margin="8dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/image_movie"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textRealesLabel"
+                        android:text="Release Date"
+                        android:textStyle="bold"
+                        android:paddingBottom="3dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:id="@+id/textDate"
+                        android:layout_below="@id/textRealesLabel"
+                        android:layout_marginBottom="50dp"/>
+                </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginTop="15dp"
+            android:alpha="0.6"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/secTitle"
+            android:text="Cast"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cast"
+            android:id="@+id/textMovieCast"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">mdb</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+   <string-array name="titles_array">
+       <item>New Movies</item>
+       <item>Watchlist</item>
+       <item>Celebs</item>
+    </string-array>
+</resources>
