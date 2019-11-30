@@ -17,16 +17,10 @@ public class MovieListFragment extends Fragment {
     private static final String IS_WATCHLIST = "IS_WATCHLIST";
     private static int isWactList;
 
-    /**
-     * Osztály példányosítás.
-     *
-     * @param isWactList  ha 1 a film benne van a megnézendő filmek listájában
-     * @return MovieListFragment
-     */
-    public static MovieListFragment newInstance(int isWactList) {
+    public static MovieListFragment newInstance(int isWachtList) {
         MovieListFragment fragment = new MovieListFragment();
         Bundle args = new Bundle();
-        args.putInt(IS_WATCHLIST, isWactList);
+        args.putInt(IS_WATCHLIST, isWachtList);
         fragment.setArguments(args);
         return fragment;
     }
@@ -35,15 +29,6 @@ public class MovieListFragment extends Fragment {
         // Empty constructor required for fragment subclasses
     }
 
-    /**
-     * Megjeleníti a filmek listáját.Ha az IS_WATCHLIST 1, akkor
-     * a watchlist-al tölti fel a listát.
-     *
-     * @param inflater
-     * @param container
-     * @param savedInstanceState
-     * @return filmek listája
-     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = View.inflate(getActivity(), R.layout.fragment_movie_list, null);

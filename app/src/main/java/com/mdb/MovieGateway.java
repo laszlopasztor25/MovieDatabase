@@ -7,9 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created by pasztor on 2015.11.15..
- */
+
 public class MovieGateway {
 
     private static List<Movie> movies;
@@ -45,11 +43,6 @@ public class MovieGateway {
 
     public static List<Movie> getmovies() { return movies; }
 
-    /**
-     * Visszaadja a watchlistban lévő filmek címét.
-     *
-     * @return titles
-     */
     public static HashSet<String> getWatchlistTitles() {
         HashSet<String> titles = new HashSet<String>();
         for(Movie m : watchlist) {
@@ -58,11 +51,6 @@ public class MovieGateway {
         return titles;
     }
 
-    /**
-     * Hozzáadja a paraméterül kapott filmek címét a watchlisthoz.
-     *
-     * @param titles
-     */
     public static void  setWatchlistByTitles(Set<String> titles) {
         for (String t: titles) {
             for (Movie m : watchlist) {

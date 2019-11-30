@@ -80,12 +80,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(mTitles[0]);
 
     }
-    /**
-     * Lecseréli a tartalmat a kiválasztott menühöz tartozó fragmensre.
-     *
-     * @param position a kiválasztott menü pozíciója a listában. Ha 0
-     * vagy 1, akkor a film listát jeleníti meg, ha 3 akkor a hírességeket
-     */
+
     private void selectItem(int position) {
         // update the main content by replacing fragments
         Fragment fragment = position <= 1 ? MovieListFragment.newInstance(position) : CelebListFragment.newInstance();

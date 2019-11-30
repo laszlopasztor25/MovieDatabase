@@ -19,9 +19,6 @@ import android.widget.VideoView;
 import org.joda.time.DateTime;
 import org.joda.time.Days;
 
-/**
- * Created by pasztor on 2015.11.15..
- */
 public class MovieDetailFragment extends Fragment {
 
     private static final String ARG_INDEX = "ARG_INDEX";
@@ -30,14 +27,6 @@ public class MovieDetailFragment extends Fragment {
     private Movie movie;
     private ImageView add;
     private int id;
-
-    /**
-     * Osztály példányosítása.
-     *
-     * @param index a kiválasztott film pozíciója
-     * @param isw ha 1 a film benne van a megnézendő filmek listájában
-     * @return MovieDetailFragment
-     */
 
     public static MovieDetailFragment newInstance(int index, int isw) {
         MovieDetailFragment fragment = new MovieDetailFragment();
@@ -57,14 +46,6 @@ public class MovieDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
-    /**
-     * Megjeleníti a filmek adatlapját.
-     *
-     * @param inflater
-     * @param container
-     * @param savedInstanceState
-     * @return view a film adatlapja
-     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment

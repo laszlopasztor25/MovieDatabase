@@ -2,9 +2,6 @@ package com.mdb;
 
 import org.joda.time.DateTime;
 
-/**
- * Created by pasztor on 2015.11.15..
- */
 public class Movie {
 
     private String title;

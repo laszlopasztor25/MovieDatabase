@@ -1,8 +1,5 @@
 package com.mdb;
 
-/**
- * Created by pasztor on 2015.11.22..
- */
 public class Celeb {
     private String name;
     private String movies;
